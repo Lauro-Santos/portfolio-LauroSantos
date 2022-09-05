@@ -1,0 +1,18 @@
+.cabecalo_navegacao {
+    background: rgba(74, 74, 74, 0.6);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    color: #ffffff;
+    height: 3rem;
+}
+
+.cabecalo_navegacao-conteiner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalo_navegacao-link:hover {
+    color: #17a2ff;
+}

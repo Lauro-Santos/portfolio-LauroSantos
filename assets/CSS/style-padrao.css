@@ -1,0 +1,23 @@
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #777777;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #17a2ff;
+    border-radius: 4px;
+    border: none;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.cabecalho nav {
+    text-transform: uppercase;
+}

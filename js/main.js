@@ -14,9 +14,8 @@ progressoSkill_ui.setAttribute("style", "width: 80%;");
 
 
 //nao esta funcionando
-const cabecalho = document.getElementsByName("nav")[0];
+const cabecalho = document.getElementById("cabecalho")[0];
 const cabecalhoTop = cabecalho.offsetTop();
-
 
 function fixarCabecalhoTopo() {
     if (window.pageYOffset >= cabecalhoTop) {
@@ -24,4 +23,8 @@ function fixarCabecalhoTopo() {
     } else {
         cabecalho.classList.remove("cabecalho--fixed");
     }
+}
+
+window.onscroll = function() {
+    fixarCabecalhoTopo();
 }

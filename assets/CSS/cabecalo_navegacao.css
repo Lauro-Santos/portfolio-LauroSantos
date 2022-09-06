@@ -1,10 +1,10 @@
 .cabecalo_navegacao {
     background: rgba(74, 74, 74, 0.6);
     backdrop-filter: blur(1.5px);
-    -webkit-backdrop-filter: blur(1.5px);
     color: #ffffff;
+    font-family: 'Comfortaa', sans-serif;
     height: 3rem;
-    overflow: hidden;
+    text-transform: uppercase;
 }
 
 .cabecalo_navegacao-conteiner {
@@ -23,5 +23,5 @@
     position: fixed;
     top: 0;
     width: 100%;
-    
+    overflow: hidden;
 }

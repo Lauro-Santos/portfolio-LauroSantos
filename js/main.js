@@ -36,6 +36,4 @@ botao.addEventListener('click', copiarEmail);
 function copiarEmail() {
     
     navigator.clipboard.writeText(email.innerText);
-    alert("Entre em contato e vamos trabalhar juntos!");
-    
 }

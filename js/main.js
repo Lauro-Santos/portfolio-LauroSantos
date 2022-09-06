@@ -14,12 +14,13 @@ progressoSkill_ui.setAttribute("style", "width: 80%;");
 
 
 //nao esta funcionando
-const cabecalho = document.getElementById("cabecalho")[0];
-const cabecalhoTop = cabecalho.offsetTop();
+const cabecalho = document.getElementById("cabecalho");
+const cabecalhoTop = cabecalho.offsetTop;
 
 function fixarCabecalhoTopo() {
-    if (window.pageYOffset >= cabecalhoTop) {
+    if (window.pageYOffset > cabecalhoTop) {
         cabecalho.classList.add("cabecalho--fixed");
+        console.log(cabecalho + "verificado");
     } else {
         cabecalho.classList.remove("cabecalho--fixed");
     }

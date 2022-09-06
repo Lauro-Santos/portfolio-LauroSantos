@@ -1,0 +1,18 @@
+.rodape {
+    height: 15rem;
+    font-family: 'Comfortaa', sans-serif;
+    align-items: center;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rodape_links-socialMedia {
+    margin-top: 0.5rem;
+}
+
+.rodape_links-socialMedia a img {
+    padding: 0.5rem;
+    width: 3.5rem;
+}

@@ -12,10 +12,8 @@ progressoSkill_javaScript.setAttribute("style", "width: 50%;");
 progressoSkill_react.setAttribute("style", "width: 8%;");
 progressoSkill_ui.setAttribute("style", "width: 80%;");
 
-
-//nao esta funcionando
 const cabecalho = document.getElementById("cabecalho");
-const cabecalhoTop = cabecalho.offsetTop;
+const cabecalhoTop = cabecalho.offsetTop;//obter distancia entre o elemento e o topo da pagina
 
 function fixarCabecalhoTopo() {
     if (window.pageYOffset > cabecalhoTop) {

@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="assets/CSS/reset.css">
     <link rel="stylesheet" href="assets/CSS/normalize.css">
     <link rel="stylesheet" href="assets/CSS/style-padrao.css">
+    <link rel="stylesheet" href="assets/CSS/cabecalho.css">
     <link rel="stylesheet" href="assets/CSS/cabecalho_banner.css">
-    <link rel="stylesheet" href="assets/CSS/cabecalo_navegacao.css">
+    <link rel="stylesheet" href="assets/CSS/cabecalho_navegacao.css">
     <link rel="stylesheet" href="assets/CSS/sobre.css">
     <link rel="stylesheet" href="assets/CSS/rodape.css">
 
@@ -25,6 +26,7 @@
 </head>
 
 <body>
+
     <header class="cabecalho">
         <div class="cabecalho_banner" id="banner">
             <h1 class="cabecalho_banner-titulo">Me chamo <span>Lauro Santos</span></h1>
@@ -40,7 +42,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section class="sobre" id="sobre">
             <h2>sobre mim</h2>
@@ -81,17 +83,33 @@
             </div>
         </section>
         <section class="portifolio">
-            <h5>Portifolio</h5>
-            <div class="portifolio_container">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <h5>Maeus Projetos</h5>
+            <ul class="portifolio_container">
+                <li class="projeto">
+                    <a href="#">
+                        <p></p>
+                        <div class="imagem_projeto" id="projeto1"></div>
+                    </a>
+                </li>
+                <li class="projeto">
+                    <a href="#">
+                        <p></p>
+                        <div class="imagem_projeto" id="projeto2"></div>
+                    </a>
+                </li>
+                <li class="projeto">
+                    <a href="#">
+                        <p></p>
+                        <div class="imagem_projeto" id="projeto3"></div>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
+
     <footer class="rodape" id="contato">
         <h6>Email para contato &#8595;</h6>
-        <section class="rodape_contato">            
+        <section class="rodape_contato">
             <div class="contato_area-email">
                 <p class="email" id="email">lauros034+contato@gmail.com</p>
                 <button class="botaoCopiar" onclick="copiarEmail()" type="button">Copiar</button>
@@ -100,12 +118,15 @@
         <h6>Minhas redes sociais &#8595;</h6>
         <section class="rodape_links-socialMedia">
             <a href="https://github.com/Lauro-Santos"><img src="assets/img/iconeGitHub.svg" alt="Meu GitHub"></a>
-            <a href="https://www.linkedin.com/in/lauro-santos-728234226/"><img src="assets/img/iconeLinkedin.svg" alt="Meu Linkedin"></a>
+            <a href="https://www.linkedin.com/in/lauro-santos-728234226/"><img src="assets/img/iconeLinkedin.svg"
+                    alt="Meu Linkedin"></a>
         </section>
         <p>Feito à mão por mim &#169; Lauro Santos</p>
     </footer>
+
     <script src="js/main.js">
     </script>
+
 </body>
 
 </html>

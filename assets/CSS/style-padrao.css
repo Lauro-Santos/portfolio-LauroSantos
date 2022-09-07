@@ -19,13 +19,3 @@ html::-webkit-scrollbar-thumb {
 body {
     background-color: #474747;
 }
-
-.cabecalho {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Comfortaa', sans-serif;
-}
-
-.cabecalho nav {
-    text-transform: uppercase;
-}

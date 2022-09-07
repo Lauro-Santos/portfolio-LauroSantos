@@ -1,0 +1,10 @@
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.cabecalho nav {
+    text-transform: uppercase;
+}

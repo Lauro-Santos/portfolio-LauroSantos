@@ -1,6 +1,7 @@
 .rodape {
     align-items: center;
     background: #f1f1f1;
+    color: #0e0e0e;
     display: flex;
     flex-direction: column;
     font-family: 'Comfortaa', sans-serif;
@@ -25,7 +26,6 @@
 }
 
 .botaoCopiar {
-    color: #000000;
     background: #17a2ff;
     border: none;
     border-radius: 1rem;

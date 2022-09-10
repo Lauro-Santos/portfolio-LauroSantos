@@ -16,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2rem;
+    margin-top: 2rem;
 }
 
 .portfolio_projeto {
@@ -27,7 +27,6 @@
 }
 
 .portfolio_projeto a {
-    
     width: 100%;
     height: 100%;
 }

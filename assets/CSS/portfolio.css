@@ -6,7 +6,6 @@
 }
 
 .portfolio h5 {
-    font-size: 2rem;
     padding: 1.5rem 0;
     text-transform: uppercase;
 }
@@ -16,7 +15,6 @@
 .portfolio_container {
     align-items: center;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -31,16 +29,6 @@
     justify-content: center;
     text-align: justify;
     transition: 0.5s;
-    height: 12rem;
-    margin: 1% 0; 
-    width: 100%;
-}
-
-.portfolio_container li:first-child {
-    margin-top: 0;
-}
-.portfolio_container li:last-child {
-    margin-bottom: 0;
 }
 
 .portfolio_container li:hover {
@@ -68,45 +56,4 @@
     background-image: url("../img/projects/em\ breve.svg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 768px) {
-    .portfolio h5 {
-        font-size: 3rem;
-    }
-
-    .portfolio_container li {
-        height: 16rem;
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .portfolio_container {
-        flex-direction: row;
-    }
-
-    .portfolio_container li {
-        width: 45%;
-    }
-
-    .portfolio_container li:first-child {
-        margin-top: 1%;
-    }
-
-    .portfolio_container li:last-child {
-        margin-bottom: 1%;
-    }
-
-    .portfolio_container li:nth-child(1n) {
-        margin-right: 1%;
-        margin-left: 1%;
-    }
-    
-}
-
-@media screen and (min-width: 1200px) {
-    .portfolio_container li {
-        width: 23%;
-    }
 }

@@ -6,23 +6,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;   
-}
-
-.cabecalho_banner-titulo {
-    font-size: 30px;
-    margin-bottom: 0.5rem;
+    height: 100vh; 
 }
 
 .cabecalho_banner-titulo span {
     color: #17a2ff;
     text-transform: uppercase;
-}
-
-.cabecalho_banner-paragrafo {
-    font-size: 25px;
-    line-height: 1rem;
 }
 
 .cabecalho_banner-paragrafo strong {
@@ -31,7 +20,6 @@
 
 .cabecalho_banner-botao {
     margin: 4rem;
-    padding: 20px;
     border: 2px solid #ffffff;
     transition: all 0.5s;
 }

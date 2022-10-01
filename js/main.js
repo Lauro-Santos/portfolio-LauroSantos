@@ -1,18 +1,36 @@
 
 //alterador de skills (ainda tem que melhorar)
-const progressoSkill_html = document.querySelector('#skil_htlm');
-const progressoSkill_css = document.querySelector('#skil_css');
-const progressoSkill_javaScript = document.querySelector('#skil_javaScript');
-const progressoSkill_react = document.querySelector('#skil_react');
-const progressoSkill_ui = document.querySelector('#skil_ui');
-const progressoSkill_graphicDesign = document.querySelector('#skil_graphicDesign');
+const progressoSkill_html = document.querySelector('.htlm');
+const progressoSkill_css = document.querySelector('.css');
+const progressoSkill_javaScript = document.querySelector('.javaScript');
+const progressoSkill_react = document.querySelector('.react');
+const progressoSkill_ui = document.querySelector('.ui');
+const progressoSkill_graphicDesign = document.querySelector('.graphicDesign');
 
-progressoSkill_html.setAttribute("style", "width: 75%;");
-progressoSkill_css.setAttribute("style", "width: 60%;");
-progressoSkill_javaScript.setAttribute("style", "width: 50%;");
-progressoSkill_react.setAttribute("style", "width: 8%;");
-progressoSkill_ui.setAttribute("style", "width: 80%;");
-progressoSkill_graphicDesign.setAttribute("style", "width: 95%;");
+let html = "75%";
+let css = "60%";
+let js = "40%";
+let react = "15%";
+let ui = "60%";
+let gd = "95%";
+
+progressoSkill_html.setAttribute("style", "width: "+html+";");
+progressoSkill_html.setAttribute("per", html);
+
+progressoSkill_css.setAttribute("style", "width: "+css+";");
+progressoSkill_css.setAttribute("per", css);
+
+progressoSkill_javaScript.setAttribute("style", "width: "+js+";");
+progressoSkill_javaScript.setAttribute("per", js);
+
+progressoSkill_react.setAttribute("style", "width: "+react+";");
+progressoSkill_react.setAttribute("per", react);
+
+progressoSkill_ui.setAttribute("style", "width: "+ui+";");
+progressoSkill_ui.setAttribute("per", ui);
+
+progressoSkill_graphicDesign.setAttribute("style", "width: "+gd+";");
+progressoSkill_graphicDesign.setAttribute("per", gd);
 
 //---------------------------------------------------------------------------------------------
 

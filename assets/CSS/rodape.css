@@ -31,14 +31,12 @@
     border-radius: 1rem;
     margin-left: 1rem;
     padding: 0.5rem;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .botaoCopiar:hover {
     color: #ffffff;
     background: #0e86d6;
-    border: 0.2px solid rgba(12, 79, 124, 0.747);
-    padding: 0.4rem;
 }
 
 .rodape h6 {
@@ -55,10 +53,4 @@
     border-bottom: 1px solid #17a2ff;
     padding: 0.5rem;
     width: 3.5rem;
-    transition: all 0.5s;
-}
-
-.rodape_links-socialMedia a img:hover {
-    border-bottom-width: 2px;
-    width: 3.8rem;
 }

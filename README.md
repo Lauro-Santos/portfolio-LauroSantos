@@ -5,4 +5,6 @@
   <a href="https://github.com/Lauro-Santos/portfolio-LauroSantos/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Lauro-Santos/portfolio-LauroSantos?style=for-the-badge"></a>
 </p>
 
-<h4 align="center" style="color:red;">     :construction:  Projeto em construção  :construction:</h4>
+<h2>Acesse o portifólio: <a href="https://lauro-santos.github.io/portfolio-LauroSantos/" color="green">Portifólio</a> :arrow_right: </h2>
+
+<h4 align="center" color="red">     :construction:  Projeto em construção  :construction:</h4>

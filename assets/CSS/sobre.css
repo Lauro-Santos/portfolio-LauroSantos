@@ -1,50 +1,51 @@
 .sobre {
-    color: #ffffff;
-    font-family: 'Maven Pro', sans-serif;
-    margin: 2rem 0;
-}
-
-.sobre h2 {
-    font-size: 3rem;
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-    margin: 3rem 0;
-}
-
-.sobre_coteudo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 4rem;
-    width: 100%;
+    justify-content: center;
+    height: 80vh;
+    margin: 4rem 0;
 }
 
-.sobre-foto {
-    display: block;
-}
-
-.sobre-titulo {
-    padding-top: 1.5rem;
-    width: 100%;
-    text-align: center;
-}
-
-.sobre-paragrafo {
-    padding-top: 0.5rem;
-    text-align: center;
-}
-
-.sobre-link {
-    border: 2px solid #ffffff;
-    margin-top: 1rem;
+.card-sobre {
+    width: 300px;
+    background-color: var(--preto-padrao);
+    box-shadow: var(--box-shadow-padrao);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    width: 15rem;
-    text-align: center;
-    transition: 0.5s;
 }
 
-.sobre-link:hover {
-    border-color: #17a2ff;
+.card-sobre__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-sobre__avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid var(--preto-padrao);
+    box-shadow: var(--box-shadow-padrao);
+    margin: 2rem auto;
+}
+
+.card-sobre__nome {
+    color: var(--cinza);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-sobre__coteudo {
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-interno-padrao);
 }

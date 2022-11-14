@@ -1,3 +1,19 @@
+@import url("sobre.css");
+@import url("elements/botoesAnimados.css");
+@import url("elements/links.css");
+@import url("rodape.css");
+
+:root {
+    --preto-padrao: #161616;
+    --branco: #f7f7f7;
+    --cinza: #949494;
+    --laranja: #FF5C00;
+    --box-shadow-padrao: 14px 14px 28px #090909,
+    -14px -14px 28px #232323;
+    --box-shadow-interno-padrao: inset 14px 14px 28px #090909,
+            inset -14px -14px 28px #232323;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,5 +33,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background-color: #474747;
+    background-color: var(--preto-padrao);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
 }

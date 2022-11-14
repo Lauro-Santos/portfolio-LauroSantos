@@ -9,16 +9,9 @@
 
     <link rel="stylesheet" href="assets/CSS/reset.css">
     <link rel="stylesheet" href="assets/CSS/normalize.css">
+
     <link rel="stylesheet" href="assets/CSS/responsivo.css">
     <link rel="stylesheet" href="assets/CSS/style-padrao.css">
-    <link rel="stylesheet" href="assets/CSS/cabecalho.css">
-    <link rel="stylesheet" href="assets/CSS/cabecalho_banner.css">
-    <link rel="stylesheet" href="assets/CSS/cabecalho_navegacao.css">
-    <link rel="stylesheet" href="assets/CSS/sobre.css">
-    <link rel="stylesheet" href="assets/CSS/sobre_skills.css">
-    <link rel="stylesheet" href="assets/CSS/portfolio.css">
-    <link rel="stylesheet" href="assets/CSS/rodape.css">
-    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,140 +23,38 @@
 </head>
 
 <body>
-
-    <header class="cabecalho">
-        <div class="cabecalho_banner" id="banner">
-            <h1 class="cabecalho_banner-titulo">Me chamo <span>Lauro Santos</span></h1>
-            <p class="cabecalho_banner-paragrafo">e sou desenvolvedor <strong>front-end</strong></p>
-            <a class="cabecalho_banner-botao" href="#sobre">veja meu trabalho</a>
-        </div>
-        <nav class="cabecalo_navegacao" id="cabecalho">
-            <ul class="cabecalo_navegacao-conteiner">
-                <li class="cabecalo_navegacao-link"><a href="#banner">início</a></li>
-                <li class="cabecalo_navegacao-link"><a href="#portifolio">portifolio</a></li>
-                <li class="cabecalo_navegacao-link"><a href="#sobre">sobre</a></li>
-                <li class="cabecalo_navegacao-link"><a href="#contato">contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <section class="sobre" id="sobre">
-            <h2>sobre mim</h2>
-            <div class="sobre_container">
-                <div class="sobre_coteudo-container">
-                    <img class="sobre-foto" src="assets/img/lauro.jpg" alt="foto de lauro santos">
-                    <h3 class="sobre-titulo">Quem é esse cara?</h3>
-                    <p class="sobre-paragrafo">Desenvolvedor front-end freelancer no Brazil. Tenho uma paixão séria por
-                        design de interface do usuário e criação de experiências de usuário intuitivas e dinâmicas.</p>
-                    <a class="sobre-link" href="#">Vamos fazer algo especial.</a>
-                </div>
-                <div class="sobre_coteudo-skills">
-                    <h4 class="skills-titulo" lang="en">Skills</h4>
-                    <div class="skills-container">
-                        <p>GRAPHIC DESIGN</p>
-                        <div class="skill_barra">
-                            <span class="skill graphicDesign"></span>
-                        </div>
-                        <p>UI/UX DESIGN</p>
-                        <div class="skill_barra">
-                            <span class="skill ui"></span>
-                        </div>
-                        <p>JAVA SCRIPT</p>
-                        <div class="skill_barra">
-                            <span class="skill javaScript"></span>
-                        </div>
-                        <p>HTML</p>
-                        <div class="skill_barra">
-                            <span class="skill htlm"></span>
-                        </div>
-                        <p>CSS</p>
-                        <div class="skill_barra">
-                            <span class="skill css"></span>
-                        </div>
-
-                        <p>REACT</p>
-                        <div class="skill_barra">
-                            <span class="skill react"></span>
-                        </div>
+        <section class="sobre">
+            <div class="card-sobre">
+                <div class="card-sobre__container">
+                    <img class="card-sobre__avatar" src="assets/img/lauro.jpg" alt="Foto de lauro santos">
+                    <p class="card-sobre__nome">Lauro Santos</p>
+                    <div class="card-sobre__coteudo">
+                        <p class="card-sobre--paragrafo">Desenvolvedor front-end freelancer no Brazil. Tenho uma paixão
+                            séria por
+                            design de interface do usuário e criação de experiências de usuário intuitivas e dinâmicas.
+                        </p>
                     </div>
                 </div>
+                <a class="btn-luminoso" href="#">veja meu trabalho<i></i></a>
             </div>
-        </section>
-        <section class="portfolio" id="portifolio">
-            <h5>Meus Projetos</h5>
-            <ul class="portfolio_container">
-                <li id="embreve">
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
+            <ul class="wrapper">
+                <li class="icon linkedin">
+                    <span class="tooltip">Linkedin</span>
+                    <span><i class="fab fa-linkedin-f"></i></span>
                 </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
-                </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
-                </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
-                </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
-                </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
-                </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
-                </li>
-                <li id="embreve"> 
-                    <p>EM BREVE</p>
-                    <a class="portfolio_projeto-link" href="#">
-                        Veja o projeto
-                    </a>
+                <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fab fa-github"></i></span>
                 </li>
             </ul>
         </section>
     </main>
-
-    <footer class="rodape" id="contato">
-        <h6>Email para contato &#8595;</h6>
-        <section class="rodape_contato">
-            <div class="contato_area-email">
-                <p class="email" id="email">lauros034+contato@gmail.com</p>
-                <button class="botaoCopiar" onclick="copiarEmail()" type="button">Copiar</button>
-            </div>
-        </section>
-        <h6>Minhas redes sociais &#8595;</h6>
-        <section class="rodape_links-socialMedia">
-            <a href="https://github.com/Lauro-Santos"><img src="assets/img/iconeGitHub.svg" alt="Meu GitHub"></a>
-            <a href="https://www.linkedin.com/in/lauro-santos-728234226/"><img src="assets/img/iconeLinkedin.svg"
-                    alt="Meu Linkedin"></a>
-        </section>
+    <footer class="rodape">
         <p>Feito à mão por mim &#169; Lauro Santos</p>
     </footer>
 
-    <script src="js/main.js">
-    </script>
+    <script src="js/main.js"></script>
 
 </body>
 

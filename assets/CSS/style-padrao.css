@@ -1,6 +1,9 @@
+@import url("cabecalho.css");
 @import url("sobre.css");
 @import url("elements/botoesAnimados.css");
 @import url("elements/links.css");
+@import url("melhoresTrabalhos.css");
+@import url("slide.css");
 @import url("rodape.css");
 
 :root {
@@ -12,6 +15,7 @@
     -14px -14px 28px #232323;
     --box-shadow-interno-padrao: inset 14px 14px 28px #090909,
             inset -14px -14px 28px #232323;
+    --box-shadow-lateral: 39px 0px 12px -8px rgba(0, 0, 0, 0.89) ;
 }
 
 html {
@@ -23,11 +27,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: #777777;
+    background: var(--cinza);
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: #17a2ff;
+    background-color: var(--laranja);
     border-radius: 4px;
     border: none;
 }
@@ -36,4 +40,5 @@ body {
     background-color: var(--preto-padrao);
     font-family: 'Comfortaa', sans-serif;
     font-size: 16px;
+    margin: 0;
 }

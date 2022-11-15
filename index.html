@@ -17,14 +17,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Maven+Pro&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <link rel="icon" type="image/png" href="assets/img/logo.svg">
 
     <title lang="pt-br">Lauro Santos</title>
 </head>
 
 <body>
+    <header class="cabecalho">
+        <p class="cabecalho__titulo">Lauro Santos</p>
+    </header>
     <main>
+
         <section class="sobre">
+
             <div class="card-sobre">
                 <div class="card-sobre__container">
                     <img class="card-sobre__avatar" src="assets/img/lauro.jpg" alt="Foto de lauro santos">
@@ -38,6 +45,7 @@
                 </div>
                 <a class="btn-luminoso" href="#">veja meu trabalho<i></i></a>
             </div>
+
             <ul class="wrapper">
                 <li class="icon linkedin">
                     <span class="tooltip">Linkedin</span>
@@ -48,13 +56,46 @@
                     <span><i class="fab fa-github"></i></span>
                 </li>
             </ul>
+
         </section>
+
+        <section class="melhores-trabalhos">
+
+            <h2 class="melhores-trabalhos__titulo">Melhores Trabalhos</h2>
+
+        <div class="slide__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/img/0.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/3.jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" id="swiper-btn"></div>
+                <div class="swiper-button-next" id="swiper-btn"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+    </section>
+
     </main>
+
     <footer class="rodape">
         <p>Feito à mão por mim &#169; Lauro Santos</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js" type="module"></script>
 
 </body>
 

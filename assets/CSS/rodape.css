@@ -1,4 +1,5 @@
 .rodape {
     text-align: center;
-    color: #ffffff;
+    color: var(--cinza);
+    margin: 6rem 0;
 }

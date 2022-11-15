@@ -1,0 +1,13 @@
+.melhores-trabalhos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.melhores-trabalhos__titulo {
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 25px;
+}

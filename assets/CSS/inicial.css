@@ -1,0 +1,50 @@
+.inicial {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicial__socialMedia {
+    color: var(--cor-secundaria);
+    display: flex;
+    gap: 20px;
+    margin-top: 4rem;
+}
+
+.socialMedia-icon {
+    font-size: 2rem;
+}
+
+.inicial__texto h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+    gap: 6px;
+    margin-top: 4rem;
+}
+
+.inicial__texto h1 span:nth-child(1) {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.inicial__texto h1 span:nth-child(2) {
+    color: var(--laranja);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.inicial__texto h1 span:last-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.inicial__logo {
+    margin: 36px 0;
+    width: 40px;
+}
+
+.inicial__descricao {
+    padding: 0 54px;
+}

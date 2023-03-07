@@ -1,31 +1,38 @@
 .rodape {
     align-items: center;
-    height: 20rem;
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    margin-top: 7rem;
 }
 
 .rodape__btn--contato {
-    color: var(--branco);
-    text-decoration: none;
-    padding: 16px 20px;
-    background-color: var(--laranja);
-    border-radius: 15px;
+    background: var(--laranja);
+    font-weight: 500;
+    padding: 1rem 2rem;
 }
 
 .rodape__texto {
     text-align: center;
-    font-size: 20px;
-    color: var(--branco);
+    margin-top: 2rem;
+    width: 190px;
 }
 
 .rodape__texto strong {
     font-weight: 700;
 }
 
+.rodape__socialMedia {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.rodape__socialMedia .socialMedia-icon {
+    color: var(--cor-secundaria);
+    margin: 2rem 0;
+}
+
 .rodape__creditos {
-    color: var(--cinza);
-    padding-bottom: 4rem;
+    color: var(--cor-secundaria);
+    margin-bottom: .5rem;
 }

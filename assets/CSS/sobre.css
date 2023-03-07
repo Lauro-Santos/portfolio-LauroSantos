@@ -1,50 +1,19 @@
 .sobre {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 4rem 0;
+    margin-top: 106px;
 }
 
-.card-sobre {
-    width: 300px;
-    background-color: var(--preto-padrao);
-    box-shadow: var(--box-shadow-padrao);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+.sobre__foto {
+    margin-bottom: 40px;
+    width: 167px;
 }
 
-.card-sobre__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
+.sobre p {
+    padding: 0 60px;
 }
 
-.card-sobre__avatar {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    border: 2px solid var(--preto-padrao);
-    box-shadow: var(--box-shadow-padrao);
-    margin: 2rem auto;
-}
-
-.card-sobre__nome {
-    color: var(--cinza);
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.card-sobre__coteudo {
-    color: var(--branco);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow-interno-padrao);
+.sobre p:last-child {
+    margin-top: 1.5rem;
 }

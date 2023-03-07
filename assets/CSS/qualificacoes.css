@@ -1,0 +1,27 @@
+.qualificacoes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    padding: 0 2.5rem;
+}
+
+.qualificacoes__titulo {
+    background: var(--laranja);
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.formacao {
+    align-items: start;
+    display: flex;
+    gap: 1rem;
+    padding-left: .5rem;
+    margin-top: 1rem;
+}
+
+.formacao:nth-child(2) img {
+    padding-right: 0.75rem;
+}

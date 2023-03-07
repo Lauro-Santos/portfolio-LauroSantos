@@ -8,16 +8,8 @@
     <meta name="author" content="Lauro Santos">
 
     <link rel="stylesheet" href="assets/CSS/reset.css">
-    <link rel="stylesheet" href="assets/CSS/normalize.css">
 
-    <link rel="stylesheet" href="assets/CSS/responsivo.css">
-    <link rel="stylesheet" href="assets/CSS/style-padrao.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Maven+Pro&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css">
 
     <link rel="icon" type="image/png" href="assets/img/logo.svg">
 
@@ -26,149 +18,125 @@
 
 <body>
     <header class="cabecalho">
-        <p class="cabecalho__titulo">Lauro Santos</p>
+
     </header>
     <main>
 
-        <section class="melhores-trabalhos">
-
-            <h2 class="melhores-trabalhos__titulo">Melhores Trabalhos</h2>
-
-        <div class="slide__container">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="assets/img/0.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/3.jpg" alt=""></div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev" id="swiper-btn"></div>
-                <div class="swiper-button-next" id="swiper-btn"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+        <section class="inicial">
+            <div class="inicial__socialMedia">
+                <a href="#" class="socialMedia-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="socialMedia-icon"><i class="fa-brands fa-codepen"></i></a>
+                <a href="#" class="socialMedia-icon"><i class="fa-brands fa-github"></i></a>
             </div>
-        </div>
 
-    </section>
+            <div class="inicial__texto">
+                <h1><span>Oi, sou Lauro</span><span>Desenvolvedor</span><span>Front-end</span></h1>
+            </div>
+            <img src="assets/img/logo.svg" class="inicial__logo" alt="Minha logo">
+            <p class="inicial__descricao">Tenho uma paixão séria por design gráfico, design de interface do usuário e
+                criação de experiências de usuário intuitivas e dinâmicas com um visual atrativo.</p>
+        </section>
 
         <section class="sobre">
+            <img src="assets/img/lauro.jpg" class="sobre__foto" alt="Minha foto">
+            <p>Sempre fui criativo e busco sempre melhorar minhas criações visuais, todos os meus projetos tem mais de
+                uma versão até chegar no que eu quero.</p>
+            <p>Unindo meu talento e paixão por artes visuais com desenvolvimento front-end, busca criar uma experiência
+                atrativa aos olhos e intuitiva para o usuário.</p>
+        </section>
 
-            <div class="card-sobre">
-                <div class="card-sobre__container">
-                    <img class="card-sobre__avatar" src="assets/img/lauro.jpg" alt="Foto de lauro santos">
-                    <p class="card-sobre__nome">Lauro Santos</p>
-                    <div class="card-sobre__coteudo">
-                        <p class="card-sobre--paragrafo">Desenvolvedor front-end freelancer no Brazil. Tenho uma paixão
-                            séria por
-                            design de interface do usuário e criação de experiências de usuário intuitivas e dinâmicas.
-                        </p>
-                    </div>
-                </div>
-                <a class="btn-luminoso" href="#">veja meu trabalho<i></i></a>
+        <section class="skills">
+            <h2 class="skills__titulo">Minhas Skills</h2>
+            <div class="skills_container">
+                <div class="skill"><i class="fa-brands fa-html5"></i></div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="skill"><i class="fa-brands fa-js"></i></div>
+                <div class="skill"><i class="fa-brands fa-react"></i></div>
+            </div>
+        </section>
+
+        <section class="projetos">
+            <div class="projetos__parte-superior">
+                <h2 class="projetos__titulo">Projetos</h2>
+                <a href="#" class="projetos__ver-mais">Ver Mais</a>
             </div>
 
-            <ul class="wrapper">
-                <li class="icon linkedin">
-                    <span class="tooltip">Linkedin</span>
-                    <span><i class="fab fa-linkedin-f"></i></span>
-                </li>
-                <li class="icon github">
-                    <span class="tooltip">Github</span>
-                    <span><i class="fab fa-github"></i></span>
-                </li>
-            </ul>
+            <div class="projetos__container">
+
+                <div class="card">
+                    <img src="assets/img/japan-g28ee1d2b8_1920.jpg" alt="projeto 1">
+                    <div class="projeto__sobre">
+                        <h3 class="titulo__projeto">Titulo do projeto</h3>
+                        <p class="descricao__projeto">Descrição curta e resumidamostrando o scopo e falando sobre o que
+                            é o projeto e para quem foi o projeto.</p>
+                        <a href="#" class="ver__projeto">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/japan-gbca2f5ed0_1920.jpg" alt="projeto 1">
+                    <div class="projeto__sobre">
+                        <h3 class="titulo__projeto">Titulo do projeto</h3>
+                        <p class="descricao__projeto">Descrição curta e resumidamostrando o scopo e falando sobre o que
+                            é o projeto e para quem foi o projeto.</p>
+                        <a href="#" class="ver__projeto">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/palace-g2a173186c_1920.jpg" alt="projeto 1">
+                    <div class="projeto__sobre">
+                        <h3 class="titulo__projeto">Titulo do projeto</h3>
+                        <p class="descricao__projeto">Descrição curta e resumidamostrando o scopo e falando sobre o que
+                            é o projeto e para quem foi o projeto.</p>
+                        <a href="#" class="ver__projeto">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/sunset-g7aaa52749_1920.jpg" alt="projeto 1">
+                    <div class="projeto__sobre">
+                        <h3 class="titulo__projeto">Titulo do projeto</h3>
+                        <p class="descricao__projeto">Descrição curta e resumida mostrando e falando sobre o que é o
+                            projeto e para quem foi o projeto.</p>
+                        <a href="#" class="ver__projeto">Ver Projeto</a>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
-    <section class="skills">
-        <div class="container__skills">
-            <div class="card">
-                <div class="percent" style="--crl: #ff4800; --num: 85;">
-                    <div class="dot"></div>
-                    <svg>
-                        <circle cx="60" cy="60" r="60"></circle>
-                        <circle cx="60" cy="60" r="60"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>85<span>%</span></h2>
-                        <p>html</p>
-                    </div>
+        <section class="qualificacoes">
+            <h2 class="qualificacoes__titulo">Minhas qualificações</h2>
+            <div>
+                <div class="formacao">
+                    <img src="assets/img/logo-ifrn.svg" alt="Logo ifrn">
+                    <p>Ensino médio-técnico no IFRN - SC, curso de técnico em informática</p>
+                </div>
+                <div class="formacao">
+                    <img src="assets/img/logo-alura.svg" alt="Logo alura">
+                    <p>Aluno assíduo dos cursos e formações da plataforma Alura da Caelum</p>
+                </div>
+                <div class="formacao">
+                    <img src="assets/img/logo-unopar.png" alt="Logo unopar">
+                    <p>Cursando superior em Desenvolvimento Web na Universidade Unopar</p>
                 </div>
             </div>
-            <div class="card">
-                <div class="percent" style="--crl: #0099ff; --num: 60;">
-                    <div class="dot"></div>
-                    <svg>
-                        <circle cx="60" cy="60" r="60"></circle>
-                        <circle cx="60" cy="60" r="60"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>60<span>%</span></h2>
-                        <p>css</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="percent" style="--crl: #ffd000; --num: 23;">
-                    <div class="dot"></div>
-                    <svg>
-                        <circle cx="60" cy="60" r="60"></circle>
-                        <circle cx="60" cy="60" r="60"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>23<span>%</span></h2>
-                        <p>javascript</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="percent" style="--crl: #00e1ff; --num: 10;">
-                    <div class="dot"></div>
-                    <svg>
-                        <circle cx="60" cy="60" r="60"></circle>
-                        <circle cx="60" cy="60" r="60"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>10<span>%</span></h2>
-                        <p>react</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="percent" style="--crl: #c300ff; --num: 58;">
-                    <div class="dot"></div>
-                    <svg>
-                        <circle cx="60" cy="60" r="60"></circle>
-                        <circle cx="60" cy="60" r="60"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>58<span>%</span></h2>
-                        <p>ux/ui</p>
-                    </div>
-                </div>
-            </div>
-
-    </section>
+        </section>
 
     </main>
 
     <footer class="rodape">
-        <a href="#" class="rodape__btn--contato">ENTRE EM CONTATO</a>
+        <a href="#" class="rodape__btn--contato">Entre em contato</a>
         <p class="rodape__texto">Envie um email para <strong>lauros034@gmail.com</strong> e vamos trabalha juntos</p>
+
+        <div class="rodape__socialMedia">
+            <a href="#" class="socialMedia-icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="socialMedia-icon"><i class="fa-brands fa-codepen"></i></a>
+            <a href="#" class="socialMedia-icon"><i class="fa-brands fa-github"></i></a>
+        </div>
+
         <p class="rodape__creditos">Feito à mão por mim &#169;Lauro Santos</p>
+
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js" type="module"></script>
-
 </body>
 
 </html>

@@ -1,9 +1,9 @@
 .inicial {
     align-items: center;
-    background-image: url(../img/logo2.svg);
+    /*background-image: url(../img/logo2.svg);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: center;
+    background-position: center;*/
     display: flex;
     flex-direction: column;
 }

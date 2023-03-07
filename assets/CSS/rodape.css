@@ -12,8 +12,9 @@
 }
 
 .rodape__texto {
-    text-align: center;
+    line-height: 1.2rem;
     margin-top: 2rem;
+    text-align: center;
     width: 190px;
 }
 
@@ -25,14 +26,34 @@
     align-items: center;
     display: flex;
     gap: 1.5rem;
+    margin: 2rem 0;
 }
 
 .rodape__socialMedia .socialMedia-icon {
     color: var(--cor-secundaria);
-    margin: 2rem 0;
 }
 
 .rodape__creditos {
     color: var(--cor-secundaria);
     margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 798px) {
+    .rodape__btn--contato {
+        padding: 1.5rem 3rem;
+    }
+
+    .rodape__texto {
+        margin-top: 3rem;
+        line-height: 2.2rem;
+        width: 378px;
+    }
+
+    .rodape__socialMedia {
+        margin: 4rem 0;
+    }
+
+    .rodape__creditos {
+        margin-bottom: 1.5rem;
+    }
 }

@@ -28,3 +28,22 @@
 .skill i {
     font-size: 3rem;
 }
+
+@media screen and (min-width: 798px) {
+    .skills__titulo {
+        font-size: 2.5rem;
+    }
+
+    .skills_container {
+        gap: 4rem;
+    }
+
+    .skill {
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+
+    .skill i {
+        font-size: 6rem;
+    }
+}

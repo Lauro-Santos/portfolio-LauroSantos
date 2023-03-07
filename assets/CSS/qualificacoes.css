@@ -7,7 +7,7 @@
 }
 
 .qualificacoes__titulo {
-    background: var(--laranja);
+    border: 2px solid var(--laranja);
     font-size: 1.6rem;
     padding: .5rem 0;
     text-align: center;
@@ -24,4 +24,20 @@
 
 .formacao:nth-child(2) img {
     padding-right: 0.75rem;
+}
+
+@media screen and (min-width: 798px) {
+    .qualificacoes__titulo {
+        font-size: 2.6rem;
+        padding: 1rem 0;
+    }
+
+    .formacao {
+        gap: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .formacao img {
+        width: 20rem;
+    }
 }

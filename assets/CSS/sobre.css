@@ -17,3 +17,14 @@
 .sobre p:last-child {
     margin-top: 1.5rem;
 }
+
+@media screen and (min-width: 798px) {
+    .sobre__foto {
+        margin-bottom: 100px;
+        width: 350px;
+    }
+
+    .sobre p:last-child {
+        margin-top: 2.5rem;
+    }
+}

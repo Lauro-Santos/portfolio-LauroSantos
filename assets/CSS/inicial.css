@@ -11,7 +11,7 @@
 .inicial__socialMedia {
     color: var(--cor-secundaria);
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
     margin-top: 4rem;
 }
 
@@ -41,7 +41,7 @@
 .inicial__texto h1 span:last-child {
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: .1rem;
 }
 
 .inicial__logo {
@@ -51,4 +51,37 @@
 
 .inicial__descricao {
     padding: 0 54px;
+}
+
+@media screen and (min-width: 798px) {
+    .inicial__socialMedia {
+        gap: 2.5rem;
+        margin-top: 8rem;
+    }
+
+    .socialMedia-icon {
+        font-size: 4rem;
+    }
+
+    .inicial__texto h1 {
+        margin-top: 8rem;
+    }
+
+    .inicial__texto h1 span:nth-child(1) {
+        font-size: 5rem;
+    }
+    
+    .inicial__texto h1 span:nth-child(2) {
+        font-size: 5rem;
+    }
+    
+    .inicial__texto h1 span:last-child {
+        font-size: 6rem;
+        letter-spacing: .5rem;
+    }
+
+    .inicial__logo {
+        margin: 100px 0;
+        width: 60px;
+    }
 }

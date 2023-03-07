@@ -27,8 +27,13 @@
 }
 
 .card {
-   position: relative;
-   overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:nth-child(5),
+.card:last-child {
+    display: none;
 }
 
 .card img {
@@ -42,10 +47,11 @@
     background: rgb(255, 92, 0, 0.6);
     font-family: 'Comfortaa', cursive;
     height: 100%;
-    left: 0;
+    left: -400px;
     opacity: 0;
     position: absolute;
     padding: 5rem 2rem;
+    transition: .5s all ease-in;
     top: 0;
     z-index: 1;
 }
@@ -56,8 +62,9 @@
 }
 
 .descricao__projeto {
-    margin: 3rem 0 4rem 0;
     font-weight: 500;
+    margin: 3rem 0 4rem 0;
+    width: 300px;
 }
 
 .ver__projeto {
@@ -68,4 +75,47 @@
 
 .card:hover .projeto__sobre {
     opacity: 100%;
+    left: 0;
+}
+
+@media screen and (min-width: 798px) {
+    .projetos__titulo {
+        font-size: 2.5rem;
+    }
+
+    .projetos__ver-mais {
+        margin-top: 2rem;
+        padding: 30px 100px;
+    }
+
+    .projetos__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 6rem;
+    }
+
+    .card img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .card:nth-child(5),
+    .card:last-child {
+        display: block;
+    }
+
+    .projeto__sobre {
+        padding: 4rem 1.5rem;
+    }
+    
+
+    .titulo__projeto {
+        font-size: 2.5rem;
+    }
+
+    .descricao__projeto {
+        margin: 3rem 0 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }

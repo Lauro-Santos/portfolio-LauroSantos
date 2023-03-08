@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .skills__titulo {
@@ -23,10 +23,64 @@
     height: 3.5rem;
     justify-content: center;
     width: 3.5rem;
+    transition: .2s all ease-out;
+    position: relative;
 }
 
 .skill i {
     font-size: 3rem;
+}
+
+.skill:hover {
+    color: var(--cor-icone);
+    border-color: var(--cor-icone);
+}
+
+.skill:hover::after {
+    background-color: var(--cor-icone);
+    content: "";
+    padding: 15px;
+    position: absolute;
+    rotate: 45deg;
+    top: 120%;
+}
+
+.skill:hover .fa-html5::after,
+.skill:hover .fa-css3-alt::after,
+.skill:hover .fa-js::after,
+.skill:hover .fa-react::after {
+    background-color: var(--cor-icone);
+    border-radius: 8px;
+    color: var(--cor-princiapl);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 140%;
+    letter-spacing: .2rem;
+    padding: 25px;
+    
+}
+
+.skill:hover .fa-html5::after {
+    content: "html";
+    left: -45%;
+}
+
+.skill:hover .fa-css3-alt::after {
+    content: "css";
+    left: -25%;
+}
+
+.skill:hover .fa-js::after {
+    content: "javascript";
+    left: -80%;
+    font-size: 1rem;
+}
+
+.skill:hover .fa-react::after {
+    content: "react";
+    left: -55%;
 }
 
 @media screen and (min-width: 798px) {
@@ -45,5 +99,16 @@
 
     .skill i {
         font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .skill {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    .skill i {
+        font-size: 4rem;
     }
 }

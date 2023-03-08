@@ -28,3 +28,20 @@
         margin-top: 2.5rem;
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .sobre {
+        align-items: start;
+        flex-direction: row;
+    }
+
+    .sobre__foto {
+        padding-left: 140px;
+    }
+
+    .sobre p {
+        font-size: 1.5rem;
+        padding-right: 280px;
+        line-height: 2.2rem;
+    }
+}

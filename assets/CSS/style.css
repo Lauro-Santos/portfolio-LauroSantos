@@ -4,7 +4,7 @@
 @import url(inicial.css);
 @import url(sobre.css);
 @import url(skills.css);
-@import url(prjetos.css);
+@import url(projetos.css);
 @import url(qualificacoes.css);
 @import url(rodape.css);
 
@@ -37,5 +37,17 @@ body {
 @media screen and (min-width: 798px) {
     body {
         font-size: 32px;  
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 19px;  
+    }
+
+    .fundo {
+        left: 30%;
+        top: 5%;
+        width: 40%;
     }
 }

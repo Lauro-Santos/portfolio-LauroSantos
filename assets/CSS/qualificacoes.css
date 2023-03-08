@@ -41,3 +41,29 @@
         width: 20rem;
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .qualificacoes div {
+        align-items: start;
+        display: flex;
+        width: 80%;
+    }
+
+    .qualificacoes__titulo {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .formacao {
+        gap: .5rem;
+        margin-right: 1.5rem;
+    }
+
+    .formacao img {
+        width: 13rem;
+    }
+
+    .formacao p {
+        font-size: 1rem;
+    }
+}

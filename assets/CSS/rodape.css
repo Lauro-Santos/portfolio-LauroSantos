@@ -33,6 +33,10 @@
     color: var(--cor-secundaria);
 }
 
+.socialMedia-icon:hover {
+    color: #ffffff;
+}
+
 .rodape__creditos {
     color: var(--cor-secundaria);
     margin-bottom: .5rem;
@@ -55,5 +59,11 @@
 
     .rodape__creditos {
         margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .rodape__texto {
+        width: 100%;
     }
 }

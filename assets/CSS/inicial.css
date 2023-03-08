@@ -1,9 +1,5 @@
 .inicial {
     align-items: center;
-    /*background-image: url(../img/logo2.svg);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;*/
     display: flex;
     flex-direction: column;
 }
@@ -17,6 +13,17 @@
 
 .socialMedia-icon {
     font-size: 2rem;
+    transition: .5s all ease-out;
+}
+
+.socialMedia-icon:hover {
+    color: #ffffff;
+}
+
+.inicial__texto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .inicial__texto h1 {
@@ -83,5 +90,47 @@
     .inicial__logo {
         margin: 100px 0;
         width: 60px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .inicial {
+        align-items: start;
+        background: linear-gradient(89.28deg, 
+        rgba(22, 22, 22, 0.5) 51.43%, 
+        rgba(22, 22, 22, 0) 99.38%), 
+        url(../img/fundo\ com\ logo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 120vh;
+    }
+
+    .inicial__socialMedia {
+        align-items: start;
+        flex-direction: column;
+        margin-right: 130px;
+        margin-top: 35vh;
+    }
+
+    .socialMedia-icon {
+        font-size: 2.5rem;
+    }
+
+    .inicial__texto h1 {
+        margin-top: 8rem;
+        margin-left: 130px;
+    }
+
+    .inicial__logo {
+        margin: 50px 0;
+        width: 50px;
+    }
+
+    .inicial__descricao {
+        margin-left: 46px;
+        width: 520px;
     }
 }

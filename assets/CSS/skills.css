@@ -39,7 +39,7 @@
 .skill:hover::after {
     background-color: var(--cor-icone);
     content: "";
-    padding: 15px;
+    padding: 12px;
     position: absolute;
     rotate: 45deg;
     top: 120%;
@@ -50,37 +50,36 @@
 .skill:hover .fa-js::after,
 .skill:hover .fa-react::after {
     background-color: var(--cor-icone);
-    border-radius: 8px;
+    border-radius: 15px;
     color: var(--cor-princiapl);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    top: 140%;
+    top: 130%;
     letter-spacing: .2rem;
-    padding: 25px;
+    padding: 20px;
     
 }
 
 .skill:hover .fa-html5::after {
     content: "html";
-    left: -45%;
+    left: -22%;
 }
 
 .skill:hover .fa-css3-alt::after {
     content: "css";
-    left: -25%;
+    left: -8%;
 }
 
 .skill:hover .fa-js::after {
     content: "javascript";
     left: -80%;
-    font-size: 1rem;
 }
 
 .skill:hover .fa-react::after {
     content: "react";
-    left: -55%;
+    left: -30%;
 }
 
 @media screen and (min-width: 798px) {

@@ -64,22 +64,22 @@
 
 .skill:hover .fa-html5::after {
     content: "html";
-    left: -22%;
+    left: -42%;
 }
 
 .skill:hover .fa-css3-alt::after {
     content: "css";
-    left: -8%;
+    left: -25%;
 }
 
 .skill:hover .fa-js::after {
     content: "javascript";
-    left: -80%;
+    left: -115%;
 }
 
 .skill:hover .fa-react::after {
     content: "react";
-    left: -30%;
+    left: -50%;
 }
 
 @media screen and (min-width: 798px) {
@@ -99,6 +99,32 @@
     .skill i {
         font-size: 6rem;
     }
+
+    .skill:hover .fa-html5::after,
+    .skill:hover .fa-css3-alt::after,
+    .skill:hover .fa-js::after,
+    .skill:hover .fa-react::after {
+        border-radius: 15px;
+        font-size: 1rem;        
+    }
+    
+    .skill:hover .fa-html5::after {
+        left: 0;
+    }
+    
+    .skill:hover .fa-css3-alt::after {
+        left: 10%;
+    }
+    
+    .skill:hover .fa-js::after {
+        left: -40%;
+    }
+    
+    .skill:hover .fa-react::after {
+        left: -5%;
+    }
+    
+    
 }
 
 @media screen and (min-width: 1000px) {
@@ -109,5 +135,29 @@
 
     .skill i {
         font-size: 4rem;
+    }
+
+    .skill:hover .fa-html5::after,
+    .skill:hover .fa-css3-alt::after,
+    .skill:hover .fa-js::after,
+    .skill:hover .fa-react::after {
+        border-radius: 15px;
+        font-size: 1rem;        
+    }
+    
+    .skill:hover .fa-html5::after {
+        left: -22%;
+    }
+    
+    .skill:hover .fa-css3-alt::after {
+        left: -8%;
+    }
+    
+    .skill:hover .fa-js::after {
+        left: -80%;
+    }
+    
+    .skill:hover .fa-react::after {
+        left: -30%;
     }
 }

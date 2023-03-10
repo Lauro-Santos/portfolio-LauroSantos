@@ -23,6 +23,8 @@
 }
 
 .projetos__container {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 3rem;
 }
 
@@ -71,11 +73,26 @@
     background: var(--laranja);
     font-weight: 700;
     padding: 1rem 4rem;
+    transition: .3s all ease-out;
+}
+
+.ver__projeto:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 6px #783214;
 }
 
 .card:hover .projeto__sobre {
     opacity: 100%;
     left: 0;
+}
+
+.projeto__sobre a i{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.projeto__sobre a i:hover{
+    color: var(--cor-princiapl);
 }
 
 @media screen and (min-width: 798px) {
@@ -115,7 +132,7 @@
 
     .descricao__projeto {
         margin: 3rem 0 2rem 0;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 500;
     }
 }

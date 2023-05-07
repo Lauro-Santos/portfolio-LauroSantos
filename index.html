@@ -16,50 +16,48 @@
 </head>
 
 <body>
-    <img src="assets/img/logo2.svg" alt="fundo" class="fundo">
     <main>
-
-        <section class="inicial">
-            <div class="inicial__socialMedia">
+        <section id="inicial" class="inicial">
+            <nav class="inicial__socialMedia">
                 <a href="https://www.linkedin.com/in/lauro-santos-728234226/" class="socialMedia-icon" target="_blank"
                     aria-label="Meu linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://codepen.io/lauro-santos" class="socialMedia-icon" target="_blank"
                     aria-label="Meu CodePen"><i class="fa-brands fa-codepen"></i></a>
                 <a href="https://github.com/Lauro-Santos" class="socialMedia-icon" target="_blank"
                     aria-label="Meu GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
+            </nav>
 
-            <div class="inicial__texto">
+            <article class="inicial__texto">
                 <h1><span>Oi, sou Lauro</span><span>Desenvolvedor</span><span>Front-end</span></h1>
                 <img src="assets/img/logo.svg" class="inicial__logo" alt="Minha logo">
                 <p class="inicial__descricao">Tenho uma paixão séria por design gráfico, design de interface do usuário
                     e criação de experiências de usuário intuitivas e dinâmicas com um visual atrativo.</p>
-            </div>
+            </article>
 
         </section>
 
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <img src="assets/img/lauro.jpg" class="sobre__foto" alt="Minha foto">
 
-            <div>
+            <article>
                 <p>Sou brasileiro e sempre fui criativo e busco sempre melhorar minhas criações visuais, todos os meus
                     projetos tem mais de uma versão até chegar no que eu quero.</p>
                 <p>Unindo meu talento e paixão por artes visuais com desenvolvimento front-end, busco criar uma
                     experiência atrativa e intuitiva para o usuário.</p>
-            </div>
+            </article>
         </section>
 
         <section class="skills">
             <h2 class="skills__titulo">Minhas Skills</h2>
-            <div class="skills_container">
-                <div class="skill" style="--cor-icone: #E54F27;"><i class="fa-brands fa-html5"></i></div>
-                <div class="skill" style="--cor-icone: #0057FF;"><i class="fa-brands fa-css3-alt"></i></div>
-                <div class="skill" style="--cor-icone: #F7DF1E;"><i class="fa-brands fa-js"></i></div>
-                <div class="skill" style="--cor-icone: #00D1FF;"><i class="fa-brands fa-react"></i></div>
-            </div>
+            <ul class="skills_container">
+                <li class="skill" style="--cor-icone: #E54F27;"><i class="fa-brands fa-html5"></i></li>
+                <li class="skill" style="--cor-icone: #0057FF;"><i class="fa-brands fa-css3-alt"></i></li>
+                <li class="skill" style="--cor-icone: #F7DF1E;"><i class="fa-brands fa-js"></i></li>
+                <li class="skill" style="--cor-icone: #00D1FF;"><i class="fa-brands fa-react"></i></li>
+            </ul>
         </section>
 
-        <section class="projetos">
+        <section id="projetos" class="projetos">
             <div class="projetos__parte-superior">
                 <h2 class="projetos__titulo">Projetos</h2>
                 <a href="#" class="projetos__ver-mais">Ver Mais</a>
@@ -68,15 +66,18 @@
             <div class="projetos__container">
 
                 <div class="card">
-                    <img style="object-position: left;" src="https://raw.githubusercontent.com/Lauro-Santos/Vitrine-Dev---AluraDev/master/assets/img/Captura%20de%20tela%201.jpg" alt="AluraDev">
+                    <img style="object-position: left;"
+                        src="https://raw.githubusercontent.com/Lauro-Santos/Vitrine-Dev---AluraDev/master/assets/img/Captura%20de%20tela%201.jpg"
+                        alt="AluraDev">
                     <div class="projeto__sobre">
                         <h3 class="titulo__projeto">AluraDev</h3>
                         <p class="descricao__projeto">Esse projeto foi proposto pela equipe de instrutores da Alura,
                             como um desafio pra aplicar os conhecimentos em front-end, o projeto consiste no front-end
                             de uma plataforma de compartilhamento de código.</p>
-                        <a href="https://alura-dev-iota.vercel.app/" class="ver__projeto" target="_blank">Ver Projeto</a>
+                        <a href="https://alura-dev-iota.vercel.app/" class="ver__projeto" target="_blank">Ver
+                            Projeto</a>
                         <a href="https://github.com/Lauro-Santos/Vitrine-Dev---AluraDev" target="_blank"><i
-                            class="fa-brands fa-github"></i></a>
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="card">
@@ -134,22 +135,22 @@
 
         </section>
 
-        <section class="qualificacoes">
+        <section id="qualificacoes" class="qualificacoes" aria-labelledby="qualificacoes__titulo">
             <h2 class="qualificacoes__titulo">Minhas qualificações</h2>
-            <div>
-                <div class="formacao">
+            <ul>
+                <li class="formacao">
                     <img src="assets/img/logo-ifrn.svg" alt="Logo ifrn">
                     <p>Ensino médio-técnico no IFRN - SC, curso de técnico em informática</p>
-                </div>
-                <div class="formacao">
+                </li>
+                <li class="formacao">
                     <img src="assets/img/logo-alura.svg" alt="Logo alura">
                     <p>Aluno assíduo dos cursos e formações da plataforma Alura da Caelum</p>
-                </div>
-                <div class="formacao">
+                </li>
+                <li class="formacao">
                     <img src="assets/img/logo-unopar.png" alt="Logo unopar">
                     <p>Cursando superior em Desenvolvimento Web na Universidade Unopar</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
     </main>
@@ -157,16 +158,16 @@
     <footer class="rodape">
         <p class="rodape__texto">Entre em contato</p>
 
-        <div class="rodape__socialMedia">
+        <nav class="rodape__socialMedia">
             <a href="https://www.linkedin.com/in/lauro-santos-728234226/" class="socialMedia-icon" target="_blank"><i
                     class="fa-brands fa-linkedin"></i></a>
             <a href="https://codepen.io/lauro-santos" class="socialMedia-icon" target="_blank"><i
                     class="fa-brands fa-codepen"></i></a>
             <a href="https://github.com/Lauro-Santos" class="socialMedia-icon" target="_blank"><i
                     class="fa-brands fa-github"></i></a>
-        </div>
+        </nav>
 
-        <p class="rodape__creditos">Feito à mão por mim &#169;Lauro Santos</p>
+        <span class="rodape__creditos">Feito à mão por mim &#169;Lauro Santos</span>
 
     </footer>
 </body>

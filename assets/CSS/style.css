@@ -7,31 +7,39 @@
 @import url(projetos.css);
 @import url(qualificacoes.css);
 @import url(rodape.css);
+@import url(menu.css);
 
 :root {
     /*  cores   */
     --cor-princiapl: #161616;
     --cor-secundaria: #676767;
+    --cor-texto: #FFFEFE;
     --laranja: #FF5C00;
     --logo-de-fundo: #191919;
+    --laranja-baixa-opacidade: #ff5c0099;
 }
 
 body {
     background: var(--cor-princiapl);
-    color: #fafafa;
+    color: var(--cor-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
     position: relative;
 }
 
-.fundo {
-    object-fit: cover;
+body::after{
+    content: "";
+    background: url(../img/logo2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
     position: fixed;
-    width: 80%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    left: 10%;
-    top: 30%;
+    left: 0;
+    top: 0;
 }
 
 @media screen and (min-width: 798px) {

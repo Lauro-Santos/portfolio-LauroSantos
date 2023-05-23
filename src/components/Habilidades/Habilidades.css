@@ -1,21 +1,21 @@
-.skills {
+.habilidades {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin: 6rem 0;
 }
 
-.skills__titulo {
+.habilidades__titulo {
     font-size: 1.6rem;
 }
 
-.skills_container {
+.habilidades__container {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.skill {
+.habilidade {
     align-items: center;
     border: 2px solid var(--cor-secundaria);
     color: var(--cor-secundaria);
@@ -27,16 +27,16 @@
     position: relative;
 }
 
-.skill i {
+.habilidade i {
     font-size: 3rem;
 }
 
-.skill:hover {
+.habilidade:hover {
     color: var(--cor-icone);
     border-color: var(--cor-icone);
 }
 
-.skill:hover::after {
+.habilidade:hover::after {
     background-color: var(--cor-icone);
     content: "";
     padding: 12px;
@@ -45,10 +45,10 @@
     top: 120%;
 }
 
-.skill:hover .fa-html5::after,
-.skill:hover .fa-css3-alt::after,
-.skill:hover .fa-js::after,
-.skill:hover .fa-react::after {
+.habilidade:hover .fa-html5::after,
+.habilidade:hover .fa-css3-alt::after,
+.habilidade:hover .fa-js::after,
+.habilidade:hover .fa-react::after {
     background-color: var(--cor-icone);
     border-radius: 15px;
     color: var(--cor-princiapl);
@@ -62,65 +62,65 @@
     
 }
 
-.skill:hover .fa-html5::after {
+.habilidade:hover .fa-html5::after {
     content: "html";
-    left: -42%;
+    left: -40%;
 }
 
-.skill:hover .fa-css3-alt::after {
+.habilidade:hover .fa-css3-alt::after {
     content: "css";
     left: -25%;
 }
 
-.skill:hover .fa-js::after {
+.habilidade:hover .fa-js::after {
     content: "javascript";
-    left: -115%;
+    left: -10%;
 }
 
-.skill:hover .fa-react::after {
+.habilidade:hover .fa-react::after {
     content: "react";
     left: -50%;
 }
 
 @media screen and (min-width: 798px) {
-    .skills__titulo {
+    .habilidades__titulo {
         font-size: 2.5rem;
     }
 
-    .skills_container {
+    .habilidades_container {
         gap: 4rem;
     }
 
-    .skill {
+    .habilidade {
         height: 6.5rem;
         width: 6.5rem;
     }
 
-    .skill i {
+    .habilidade i {
         font-size: 6rem;
     }
 
-    .skill:hover .fa-html5::after,
-    .skill:hover .fa-css3-alt::after,
-    .skill:hover .fa-js::after,
-    .skill:hover .fa-react::after {
+    .habilidade:hover .fa-html5::after,
+    .habilidade:hover .fa-css3-alt::after,
+    .habilidade:hover .fa-js::after,
+    .habilidade:hover .fa-react::after {
         border-radius: 15px;
         font-size: 1rem;        
     }
     
-    .skill:hover .fa-html5::after {
+    .habilidade:hover .fa-html5::after {
         left: 0;
     }
     
-    .skill:hover .fa-css3-alt::after {
+    .habilidade:hover .fa-css3-alt::after {
         left: 10%;
     }
     
-    .skill:hover .fa-js::after {
+    .habilidade:hover .fa-js::after {
         left: -40%;
     }
     
-    .skill:hover .fa-react::after {
+    .habilidade:hover .fa-react::after {
         left: -5%;
     }
     
@@ -128,36 +128,36 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .skill {
+    .habilidade {
         height: 4.5rem;
         width: 4.5rem;
     }
 
-    .skill i {
+    .habilidade i {
         font-size: 4rem;
     }
 
-    .skill:hover .fa-html5::after,
-    .skill:hover .fa-css3-alt::after,
-    .skill:hover .fa-js::after,
-    .skill:hover .fa-react::after {
+    .habilidade:hover .fa-html5::after,
+    .habilidade:hover .fa-css3-alt::after,
+    .habilidade:hover .fa-js::after,
+    .habilidade:hover .fa-react::after {
         border-radius: 15px;
         font-size: 1rem;        
     }
     
-    .skill:hover .fa-html5::after {
+    .habilidade:hover .fa-html5::after {
         left: -22%;
     }
     
-    .skill:hover .fa-css3-alt::after {
+    .habilidade:hover .fa-css3-alt::after {
         left: -8%;
     }
     
-    .skill:hover .fa-js::after {
+    .habilidade:hover .fa-js::after {
         left: -80%;
     }
     
-    .skill:hover .fa-react::after {
+    .habilidade:hover .fa-react::after {
         left: -30%;
     }
 }

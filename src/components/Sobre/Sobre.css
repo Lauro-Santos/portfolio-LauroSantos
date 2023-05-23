@@ -2,29 +2,36 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 106px;
+    margin-top: 10rem;
 }
 
-.sobre__foto {
+.sobre img{
     margin-bottom: 40px;
     width: 167px;
 }
 
-.sobre p {
-    padding: 0 60px;
+.sobre article p {
+    text-align: start;
+    padding: 0 2rem;
+    line-height: 1.2em;
 }
 
-.sobre p:last-child {
+.sobre article p:last-child {
     margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 798px) {
-    .sobre__foto {
+    .sobre img {
         margin-bottom: 100px;
         width: 350px;
     }
 
-    .sobre p:last-child {
+    .sobre article p {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    .sobre article p:last-child {
         margin-top: 2.5rem;
     }
 }
@@ -35,13 +42,12 @@
         flex-direction: row;
     }
 
-    .sobre__foto {
+    .sobre img {
         padding-left: 140px;
     }
 
-    .sobre p {
+    .sobre article p {
         font-size: 1.5rem;
-        padding-right: 280px;
         line-height: 2.2rem;
     }
 }

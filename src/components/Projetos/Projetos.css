@@ -5,12 +5,12 @@
     margin-top: 7rem;
 }
 
-.projetos__titulo {
+.projetos-titulo {
     font-size: 1.6rem;
     margin-left: 10%;
 }
 
-.projetos__container {
+.projetos-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,7 +20,6 @@
 }
 
 .card {
-    position: relative;
     width: 90%;
     display: flex;
     align-items: center;
@@ -32,14 +31,14 @@
 .card img {
     width: 80%;
     max-width: 500px;
-    height: 11rem;
+    height: 16rem;
 }
 
 .projeto__sobre {
     font-family: 'Comfortaa', cursive;
     padding: 2rem 1rem 0 1.5rem;
-    width: 80%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 550px;
 }
 
 .titulo__projeto {
@@ -51,6 +50,8 @@
     font-weight: 500;
     margin-top: 1rem;
     font-size: 1rem;
+    text-align: start;
+    line-height: 1.4em;
 }
 
 .tecnologias__projeto {
@@ -63,6 +64,12 @@
 }
 
 .tecnologias__projeto li{
+    font-weight: 800;
+    margin: .5rem 0;
+}
+
+.tecnologias__projeto li{
+    font-size: 1.2rem;
     font-weight: 800;
     margin: .5rem 0;
 }
@@ -87,42 +94,24 @@
     box-shadow: 0 0 20px 6px #783214;
 }
 
-.projeto__sobre a i {
+.botoes__projetos a i {
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
-.projeto__sobre a i:hover {
+.botoes__projetos a i:hover {
     color: var(--cor-secundaria);
 }
 
-@media screen and (min-width: 798px) {
-    .projetos__titulo {
-        font-size: 2.5rem;
-    }
 
-    .projetos__ver-mais {
-        margin-top: 2rem;
-        padding: 30px 100px;
-    }
-
-    .card img {
-        height: 250px;
-    }
-
-    .projeto__sobre {
-        padding: 2rem 1rem 0 1.5rem;
-    }
-
-    .tecnologias__projeto li{
-        font-size: 1rem;
-    }
-
-}
 
 @media screen and (min-width: 1000px) {
     .projetos {
         max-width: 1720px;
+    }
+
+    .projetos-titulo {
+        font-size: 2.5rem;
     }
 
     .projetos__ver-mais {
@@ -143,13 +132,5 @@
 
     .card:nth-last-of-type(2n+1) {
         flex-direction: row-reverse;
-    }
-
-    .card img {
-        height: 280px;
-    }
-
-    .projeto__sobre a i {
-        font-size: 3rem;
     }
 }

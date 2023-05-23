@@ -5,12 +5,6 @@
     margin-top: 7rem;
 }
 
-.rodape__btn--contato {
-    background: var(--laranja);
-    font-weight: 500;
-    padding: 1rem 2rem;
-}
-
 .rodape__texto {
     line-height: 1.2rem;
     margin-top: 2rem;
@@ -22,31 +16,12 @@
     font-weight: 700;
 }
 
-.rodape__socialMedia {
-    align-items: center;
-    display: flex;
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.rodape__socialMedia .socialMedia-icon {
-    color: var(--cor-secundaria);
-}
-
-.socialMedia-icon:hover {
-    color: #ffffff;
-}
-
 .rodape__creditos {
     color: var(--cor-secundaria);
-    margin-bottom: .5rem;
+    margin: 1rem 0;
 }
 
 @media screen and (min-width: 798px) {
-    .rodape__btn--contato {
-        padding: 1.5rem 3rem;
-    }
-
     .rodape__texto {
         margin-top: 3rem;
         line-height: 2.2rem;

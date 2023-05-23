@@ -1,0 +1,48 @@
+.barra-social-midia {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+
+.socialMedia-icon {
+    color: #676767;
+    font-size: 2rem;
+    transition: .5s all ease-out;
+}
+
+.socialMedia-icon:hover {
+    color: #ffffff;
+}
+
+.barra-social-midia-rodape {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 798px) {
+    .barra-social-midia {
+        gap: 2.5rem;
+        margin-top: 8rem;
+    }
+
+    .socialMedia-icon {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .barra-social-midia {
+        align-items: start;
+        flex-direction: column;
+        margin-right: 130px;
+        margin-top: 35vh;
+    }
+
+    .socialMedia-icon {
+        font-size: 2.5rem;
+    }
+
+}

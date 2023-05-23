@@ -31,7 +31,7 @@
 .card img {
     width: 80%;
     max-width: 500px;
-    height: 16rem;
+    height: 12rem;
 }
 
 .projeto__sobre {
@@ -63,12 +63,12 @@
     gap: 1rem;
 }
 
-.tecnologias__projeto li{
+.tecnologias__projeto li {
     font-weight: 800;
     margin: .5rem 0;
 }
 
-.tecnologias__projeto li{
+.tecnologias__projeto li {
     font-size: 1.2rem;
     font-weight: 800;
     margin: .5rem 0;
@@ -132,5 +132,11 @@
 
     .card:nth-last-of-type(2n+1) {
         flex-direction: row-reverse;
+    }
+
+    .card img {
+        width: 80%;
+        max-width: 500px;
+        height: 16rem;
     }
 }

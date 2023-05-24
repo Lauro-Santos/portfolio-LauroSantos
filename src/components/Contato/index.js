@@ -68,7 +68,7 @@ const Contato = () => {
 
                 <input className="button" type="submit" value="Enviar" />
 
-                {alert !== "" && <Alerta mensagem={alert} />}
+                {alert && <Alerta mensagem={alert} />}
             </form>
 
         </div>

@@ -1,0 +1,221 @@
+.alerta {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px #000000, -1px -1px 3px #000000;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+
+/* Estilos dos tipos de alerta */
+.atencao,
+.sucesso,
+.erro,
+.info {
+    background: rgba(0, 0, 0, 0.25);
+    border: 2px solid;
+}
+
+.atencao {
+    border-color: #fce700;
+    background-color: rgba(252, 231, 0, 0.25);
+}
+
+.sucesso {
+    border-color: #00ff22;
+    background-color: rgba(0, 255, 34, 0.25);
+}
+
+.erro {
+    border-color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.info {
+    border-color: #00b5ff;
+    background-color: rgba(0, 181, 255, 0.25);
+}
+
+/* Estilos dos tipos de alerta ao passar o mouse */
+.atencao:hover {
+    background-color: rgba(252, 231, 0, 0.45);
+}
+
+.sucesso:hover {
+    background-color: rgba(0, 255, 34, 0.45);
+}
+
+.erro:hover {
+    background-color: rgba(255, 0, 0, 0.45);
+}
+
+.info:hover {
+    background-color: rgba(0, 181, 255, 0.45);
+}
+
+/* Estilos do conteúdo do alerta */
+.texto {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: .5rem 1rem;
+}
+
+.texto i {
+    font-size: 20px;
+}
+
+/* Estilos do ícone de alerta */
+.texto-atencao i {
+    color: #fce700;
+    animation: alert 2s linear 2s infinite normal;
+}
+
+.texto-sucesso i {
+    color: #00ff22;
+    animation: slide-top 2s ease-in-out infinite both;
+}
+
+.texto-erro i {
+    color: #ff0000;
+    animation: blink-1 2s infinite;
+}
+
+.texto-info i {
+    color: #00b5ff;
+    animation: scale-up-center 1s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+        infinite alternate both;
+}
+
+/* Estilos do texto do alerta */
+.texto p {
+    font-size: 20px;
+}
+
+.texto-atencao p {
+    color: #fce700;
+}
+
+.texto-sucesso p {
+    color: #00ff22;
+}
+
+.texto-erro p {
+    color: #ff0000;
+}
+
+.texto-info p {
+    color: #00b5ff;
+}
+
+/* Estilos do botão de fechar */
+.fechar {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fechar i {
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    animation: blink-1 4s infinite;
+}
+
+/* Estilos do ícone de fechar para cada tipo de alerta */
+.atencao .fechar i {
+    color: #fce700;
+}
+
+.sucesso .fechar i {
+    color: #00ff22;
+}
+
+.erro .fechar i {
+    color: #ff0000;
+}
+
+.info .fechar i {
+    color: #00b5ff;
+}
+
+/* Estilos do ícone de fechar ao passar o mouse */
+.fechar i:hover {
+    color: #000;
+    animation: none;
+}
+
+/* Animações */
+@keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-top {
+    0%,
+    50%,
+    100% {
+        transform: translateY(5px);
+    }
+    25%,
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes alert {
+    0% {
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-5px);
+    }
+    10% {
+        transform: translateX(5px);
+    }
+    15% {
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(5px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    30% {
+        transform: translateX(5px);
+    }
+    35% {
+        transform: translateX(-5px);
+    }
+    40% {
+        transform: translateX(5px);
+    }
+    45% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

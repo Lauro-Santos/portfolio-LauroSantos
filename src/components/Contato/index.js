@@ -1,19 +1,29 @@
 import { useState } from "react"
 import "./Contato.css"
 import emailjs from "@emailjs/browser"
+import Alerta from "../Alerta"
 
 const Contato = () => {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [alert, setAlert] = useState('')
 
     function sendEmail(e) {
         e.preventDefault();
 
-        if (name === '' || email === '' || message === '') {
-            alert("Preencha todos os campos")
-            return
+        if (name === '') {
+            setAlert("Preencha o nome")
+            return false
+        }
+        if (email === '') {
+            setAlert("Preencha o email")
+            return false
+        }
+        if (message === '') {
+            setAlert("Preencha a mensagem")
+            return false
         }
 
         const templateParms = {
@@ -57,6 +67,8 @@ const Contato = () => {
                 />
 
                 <input className="button" type="submit" value="Enviar" />
+
+                {alert !== "" && <Alerta mensagem={alert} />}
             </form>
 
         </div>

@@ -1,11 +1,15 @@
 import BarraSocialMidia from "../BarraSocialMidia"
 
+import Contato from "../Contato"
+
 import "./Rodape.css"
 
 const Rodape = () => {
     return (
         <footer class="rodape">
-    <p class="rodape__texto">Entre em contato</p>
+    <h3 class="rodape__texto">Entre em contato</h3>
+
+    <Contato />
 
     <BarraSocialMidia classe={'barra-social-midia-rodape'}/>
 

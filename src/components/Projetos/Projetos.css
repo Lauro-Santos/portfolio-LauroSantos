@@ -89,6 +89,10 @@
     transition: .3s all ease-out;
 }
 
+.ver__projeto:active{
+    background: var(--laranja-baixa-opacidade);
+ }
+
 .ver__projeto:hover {
     border-radius: 10px;
     box-shadow: 0 0 20px 6px #783214;

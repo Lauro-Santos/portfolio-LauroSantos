@@ -32,6 +32,8 @@ const Contato = () => {
             message: message,
         }
 
+        setAlert('')
+
         emailjs.send("service_pk0k9tu", "template_wea0rl5", templateParms, "OkbtxMWvZs8lwgecV")
             .then((response) => {
                 console.log("EMAIL ENVIADO: ", response.status, "|", response.text)

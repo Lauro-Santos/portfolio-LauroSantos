@@ -15,15 +15,15 @@ const Contato = () => {
 
         if (name === '') {
             setAlert("Preencha o nome")
-            return false
+            return
         }
         if (email === '') {
             setAlert("Preencha o email")
-            return false
+            return
         }
         if (message === '') {
             setAlert("Preencha a mensagem")
-            return false
+            return
         }
 
         const templateParms = {

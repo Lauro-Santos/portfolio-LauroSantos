@@ -1,5 +1,4 @@
 import logo from './logo.svg'
-import './App.css'
 import Cabecalho from './components/Cabecalho'
 import Sobre from './components/Sobre'
 import Hbilidades from './components/Habilidades'

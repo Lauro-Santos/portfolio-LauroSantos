@@ -1,0 +1,80 @@
+@import "../../styles/variaveis";
+
+.qualificacoes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  h2 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+    color: $cor-principal;
+  }
+
+  ul {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .formacao {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20ox;
+
+    img {
+      width: 100px;
+    }
+
+    div {
+      img {
+        width: 50px;
+        margin-right: 30px;
+      }
+    }
+
+    p {
+      color: $cor-principal;
+      text-align: start;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &.__titulo {
+      font-size: 2.6rem;
+      padding: 1rem 0;
+    }
+
+    ul {
+      flex-direction:row;
+      gap: 15px;
+      justify-content: center;
+      
+      .formacao {
+        margin-top: 2rem;
+        max-width: 250px;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 1300px) {
+    div {
+      align-items: start;
+      display: flex;
+      width: 80%;
+    }
+
+    &.__titulo {
+      font-size: 2rem;
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../styles/variaveis";
+
+.container__contato {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+
+    input,
+    textarea {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: $cor-principal;
+      border: none;
+      transition: 0.3s all ease-out;
+      border-radius: 8px;
+
+      &::placeholder {
+        font-family: $fonte-padrao;
+        outline: none;
+        box-shadow: none;
+        color: $cor-de-texto;
+      }
+
+      &:focus {
+        outline: none;
+        border-radius: 10px;
+      }
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: $azul;
+      color: $cor-principal;
+      font-family: $fonte-padrao;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 0px $azul-opaco;
+      }
+
+      &:active {
+        background: $azul-claro;
+      }
+    }
+
+    input.error {
+      border: 2px solid red;
+    }
+  }
+}

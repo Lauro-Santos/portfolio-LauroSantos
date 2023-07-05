@@ -1,0 +1,50 @@
+@import "../../styles/variaveis";
+
+.rodape {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  max-width: 100vw;
+  background-color: $cor-de-texto;
+
+  &__texto {
+    line-height: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    color: $cor-principal;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__creditos {
+    color: $cor-principal;
+    margin: 1rem 0;
+  }
+
+  @media screen and (min-width: 798px) {
+    &__texto {
+      margin-top: 3rem;
+      line-height: 2.2rem;
+      width: 378px;
+    }
+
+    &__socialMedia {
+      margin: 4rem 0;
+    }
+
+    &__creditos {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    &__texto {
+      width: 100%;
+    }
+  }
+}

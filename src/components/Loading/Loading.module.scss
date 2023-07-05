@@ -1,0 +1,44 @@
+@import "../../styles/variaveis";
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.534);
+  }
+  
+  .loader {
+    display: flex;
+    gap: 0.6rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+  
+    .box {
+      width: 25px;
+      height: 25px;
+      background: $azul-opaco;
+      border-radius: 4px;
+      box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+      animation: rotate 2s infinite;
+  
+      &:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+  
+      &:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    50% {
+      transform: rotate(180deg);
+    }
+  }

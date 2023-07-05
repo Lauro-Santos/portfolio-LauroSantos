@@ -1,0 +1,56 @@
+@import "../../styles/variaveis";
+
+.habilidades {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+
+  .habilidades__titulo {
+    color: $cor-principal;
+    font-size: $tamanho-de-fonte;
+    font-weight: 400;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .habilidades__container {
+    display: flex;
+    gap: 10px;
+    margin-top: $tamanho-de-fonte;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+
+    .habilidade {
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        font-size: $tamanho-de-fonte * 2.5;
+        color: $cor-principal;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .habilidades__container {
+      gap: 20px;
+      .habilidade {
+        i {
+          font-size: $tamanho-de-fonte * 3.125;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+  }
+}

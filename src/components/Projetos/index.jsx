@@ -5,7 +5,7 @@ const projetos = [
     nome: "Meteora",
     descricao: `Desenvolvi o front-end de um site responsivo de e-commerce da Meteora. O site possui um buscador de produtos, carrossel com informações da coleção, galeria de categorias e detalhes dos produtos.`,
     img: require("assets/images/imagem-projeto-meteora.png"),
-    linkProjeto: "https://meteora-kappa.vercel.app/",
+    linkProjeto: "https://meteora-ochre.vercel.app/",
     linkRepositorio: "https://github.com/Lauro-Santos/meteora",
     tecnologias: ["React", "JavaScript", "Sass"],
   },
